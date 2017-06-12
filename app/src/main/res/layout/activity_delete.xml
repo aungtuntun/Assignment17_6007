@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Information"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:stretchColumns="1,2">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ID :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtID1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Name :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtName1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="NRC No. :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtNRC1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Email :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtEmail1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Gender :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtGender1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Phone :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtPhone1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Date of birth :"
+                android:layout_column="0"/>
+            <EditText
+                android:id="@+id/txtDOB1"
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_column="1"
+                android:textSize="16sp"
+                android:enabled="false"/>
+        </TableRow>
+
+        <TableRow><Button
+            android:id="@+id/btnDeleteEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_span="3"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="@color/color_dark_green"
+            android:textSize="16sp"/></TableRow>
+    </TableLayout>
+
+</LinearLayout>

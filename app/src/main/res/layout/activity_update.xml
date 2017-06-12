@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Information"
+        android:textColor="@color/color_dark_back"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:stretchColumns="1,2">
+            <TableRow>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID :  "
+                    android:textColor="@color/color_dark_back"
+                    android:layout_column="0"/>
+                <EditText
+                    android:id="@+id/txtEmpIDUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Employee ID"
+                    android:layout_span="2"
+                    android:layout_column="1"
+                    android:textSize="16sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name :  "
+                    android:layout_column="0"
+                    android:textColor="@color/color_dark_back"
+                    />
+                <EditText
+                    android:id="@+id/txtNameUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_column="1"
+                    android:hint="Enter Employee Name"
+                    android:textSize="16sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NRC No. :"
+                    android:layout_column="0"   />
+                <EditText
+                    android:id="@+id/txtNRCNoUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter NRC No."
+                    android:layout_column="1"
+                    android:layout_span="2"
+                    android:textSize="16sp"/>
+            </TableRow>
+        </TableLayout>
+        <ImageView
+            android:id="@+id/imgViewUp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:stretchColumns="1,2">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email : "
+                android:layout_column="0"
+                />
+            <EditText
+                android:id="@+id/txtEmailUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email."
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender : "/>
+            <RadioGroup
+                android:id="@+id/radGroupUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radMaleUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/radFemaleUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone : "/>
+            <EditText
+                android:id="@+id/txtPhoneUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Enter Phone"
+                android:textSize="16sp"
+                android:layout_column="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOB : "/>
+            <Button
+                android:id="@+id/btnDOBUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date of birth"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center">
+
+        <Button android:id="@+id/btnSaveUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Save"
+            android:background="@color/color_dark_green"
+            android:textSize="16sp"  />
+
+    </LinearLayout>
+</LinearLayout>
