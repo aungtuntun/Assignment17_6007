@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.imceits.android.assignment17_6007.MainActivity">
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="#ffffff"
+        android:textColor="#18250f"
+        android:layout_alignParentTop="true" />
+    <ScrollView
+        android:id="@+id/layoutShow"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/txtInfo"
+        android:layout_marginTop="3dp">
+        <TextView
+            android:id="@+id/txtList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:textColor="#18250f"/>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layoutComp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutShow"
+        android:paddingTop="5dp"   >
+        <Button
+            android:id="@+id/btnViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:textColor="#ffffff"
+            android:background="@color/color_dark_green"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnInsertMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:textColor="#ffffff"
+            android:background="@color/color_dark_green"
+            android:layout_marginLeft="3dp"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btnUpdateMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#ffffff"
+            android:background="@color/color_dark_green"
+            android:layout_marginLeft="3dp"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/btnDeleteMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#ffffff"
+            android:background="@color/color_dark_green"
+            android:layout_marginLeft="3dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
